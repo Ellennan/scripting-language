@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en-GB'>
+
+<head>
+  <meta charset="utf-8">
+  <title>Game</title>
+  <style>
+    td {
+      border: 1px solid black;
+      width: 3em;
+      height: 3em;
+      margin: 0em;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    div.RedBG {
+      color: #f00;
+    }
+
+    div.font {
+      font-size: 20px;
+      color: #1E90FF;
+    }
+
+    td.BlueBG {
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="text-align: center;">
+    <h1>Game</h1>
+    <h3 id="h3">Setup stage</h3>
+    Round: <label id="round">1</label>&nbsp;
+    Treasure: <label id="treasure">0</label>&nbsp;
+    User score: <label id="userscore">0</label>&nbsp;
+    Computer score: <label id="computerscore">0</label>
+    <br><br>
+    <table id="t1" style="margin: auto;"></table><br>
+    <input type="button" id="play" value="Play" onclick="endSetup();" />
+    <input type="button" id="end" value="End" onclick="endGame();" style="display: none;" />
+    <div id="m1"></div>
+  </div>
+  <script src="game.js"></script>
+</body>
+
+</html>
